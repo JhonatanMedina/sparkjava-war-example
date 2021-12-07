@@ -7,6 +7,18 @@ pipeline {
                 echo "hola"
                 '''
             }
+         stage('build') {
+            steps {
+                sh '''
+                echo "hola Mundo"
+                '''
+            }
+        stage('Deployar') {
+            steps {
+                sh '''
+                echo "hola Mundo deployado"
+                '''
+            }
         }
     }
 }
