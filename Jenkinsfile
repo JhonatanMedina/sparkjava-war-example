@@ -11,7 +11,7 @@ pipeline {
          stage('build') {
             steps {
                 sh '''
-                echo "hola Mundo"
+                mvn clean install
                 '''
             }
          }
