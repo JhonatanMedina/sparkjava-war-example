@@ -18,7 +18,7 @@ pipeline {
         stage('Deployar') {
             steps {
                 sh '''
-                docker cp "/root/workspace/line_JM_Multibranch_BranchAleman/target/sparkjava-hello-world-1.0.war" condescending_borg:"/usr/local/tomcat/webapps"
+                docker cp "/root/workspace/line_JM_Multibranch_BranchAleman/target/sparkjava-hello-world-1.0.war" tomcat_ale:"/usr/local/tomcat/webapps"
                 '''
                   }
         
