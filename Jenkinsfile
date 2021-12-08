@@ -18,6 +18,8 @@ pipeline {
         stage('Deployar') {
             steps {
                 sh '''
+                ls -lrt
+                pwd
                 docker cp "/root/workspace/ine_JM_Multibranch_BranchEspa_ol/target/sparkjava-hello-world-1.0.war" tomcat_esp:"/usr/local/tomcat/webapps"
                 '''
                   }
